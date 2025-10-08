@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" # Change this to "maven", "gradle", "gomod", etc., as needed
+    directory: "/" # Root directory of your project
+    schedule:
+      interval: "daily"           # Dependabot's maximum allowed frequency
+      time: "11:35"               # Optional: set time of day in UTC
+      timezone: "Asia/Kolkata" 
+    target-branch: "UAT"
+    open-pull-requests-limit: 0
+    versioning-strategy: "increase-if-necessary" # Only bump if necessary
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"] # Ignores major version updates
