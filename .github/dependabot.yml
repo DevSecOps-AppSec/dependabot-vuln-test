@@ -4,7 +4,7 @@ updates:
     directory: "/" # Root directory of your project
     schedule:
       interval: "daily"           # Dependabot's maximum allowed frequency
-      time: "11:35"               # Optional: set time of day in UTC
+      time: "11:50"               # Optional: set time of day in UTC
       timezone: "Asia/Kolkata" 
     target-branch: "UAT"
     open-pull-requests-limit: 0
